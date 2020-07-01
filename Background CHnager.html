@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<script src="green.js"></script>
+	<script src="SimpleImage.js"></script>
+<h1>Green-Screen Background Changer</h1>
+	<canvas id="can1" style="border: 1px solid black; width: 500px; height: 300px;"></canvas>
+	<canvas id="can2" style="border: 1px solid black; width: 500px; height: 300px;"></canvas>
+	<p>Foreground Image: <input type="file" id="finput" accept="image/*" onchange="change1()"></p>
+	<p>Background Image: <input type="file" id="binput" accept="image/*" onchange="change2()"></p>
+	<p>Note: Background image should be greater or equal to the pixel size of ForeGround Image</p>
+	<p>If the background of Foreground Image is Green Click here -> <input type="button" value="Change Background" onclick="bgchangegr()"></p>
+	<p>If the background of Foreground Image is Red Click here -> <input type="button" value="Change Background" onclick="bgchangered()"></p>
+	<p>If the background of Foreground Image is Blue Click here -> <input type="button" value="Change Background" onclick="bgchangeblue()"></p>
+	<p>If the background of Foreground Image is White Click here -> <input type="button" value="Change Background" onclick="bgchangewh()"></p>
+	<input type="button" value="Clear Canvases" onclick="clearCanvas()"> 
+
+	<style>
+		html {
+			background-color: rgba(230,230,170);
+		}
+	</style>
+</html>
